@@ -13,6 +13,7 @@
 		BD038A2025FE06AC00CE813A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD038A1E25FE06AC00CE813A /* Main.storyboard */; };
 		BD038A2225FE06AE00CE813A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD038A2125FE06AE00CE813A /* Assets.xcassets */; };
 		BD038A2525FE06AE00CE813A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD038A2325FE06AE00CE813A /* LaunchScreen.storyboard */; };
+		BD038A2E25FE075C00CE813A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD038A2D25FE075C00CE813A /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BD038A2125FE06AE00CE813A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD038A2425FE06AE00CE813A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD038A2625FE06AE00CE813A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD038A2D25FE075C00CE813A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				BD038A1825FE06AC00CE813A /* AppDelegate.swift */,
 				BD038A1A25FE06AC00CE813A /* SceneDelegate.swift */,
 				BD038A1C25FE06AC00CE813A /* ViewController.swift */,
+				BD038A2D25FE075C00CE813A /* CollectionViewCell.swift */,
 				BD038A1E25FE06AC00CE813A /* Main.storyboard */,
 				BD038A2125FE06AE00CE813A /* Assets.xcassets */,
 				BD038A2325FE06AE00CE813A /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				BD038A1D25FE06AC00CE813A /* ViewController.swift in Sources */,
 				BD038A1925FE06AC00CE813A /* AppDelegate.swift in Sources */,
+				BD038A2E25FE075C00CE813A /* CollectionViewCell.swift in Sources */,
 				BD038A1B25FE06AC00CE813A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
