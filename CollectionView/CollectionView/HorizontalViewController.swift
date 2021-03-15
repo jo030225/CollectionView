@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HorizontalViewController.swift
 //  CollectionView
 //
 //  Created by 조주혁 on 2021/03/14.
@@ -7,31 +7,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HorizontalViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
             collectionView.delegate = self
             collectionView.dataSource = self
+            collectionView.isPagingEnabled = true
         }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension HorizontalViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
-        cell.clipsToBounds = true
-        cell.layer.cornerRadius = cell.frame.height * 0.5
-        cell.layer.borderWidth = 1.0
-        cell.layer.borderColor = UIColor.clear.cgColor
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HorizontalCollectionViewCell", for: indexPath) as! HorizontalCollectionViewCell
+//        cell.clipsToBounds = true
+//        cell.layer.cornerRadius = cell.frame.height * 0.5
+//        cell.layer.borderWidth = 1.0
+//        cell.layer.borderColor = UIColor.clear.cgColor
         
 
         cell.layer.shadowColor = UIColor.black.cgColor
@@ -42,4 +43,5 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         
         return cell
     }
+    
 }

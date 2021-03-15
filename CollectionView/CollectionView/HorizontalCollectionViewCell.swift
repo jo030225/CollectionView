@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+class HorizontalCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var label: UILabel!
 }
