@@ -23,7 +23,7 @@ class TableViewController: UIViewController {
 
 }
 
-extension TableViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension TableViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
@@ -37,5 +37,14 @@ extension TableViewController: UICollectionViewDataSource, UICollectionViewDeleg
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if kind == UICollectionView.elementKindSectionHeader {
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
+            return headerView
+        } else {
+            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "footer", for: indexPath)
+            return footerView
+        }
+    }
     
 }
